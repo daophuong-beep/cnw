@@ -17,7 +17,7 @@ function showTab(n) {
   //... and fix the Previous/Next buttons:
 
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "finish";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
@@ -37,7 +37,7 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    document.getElementById("regForm").submit();
+    document.getElementById("lesson").finish();
     return false;
   }
   // Otherwise, display the correct tab:
