@@ -17,7 +17,7 @@ function isLogin() {
 }
 
 //get profile
-async function getProfile() {
+async function getProfile() {x
   const response = await fetch(url + "user/profile/" + sessionStorage.getItem("username"), {
     method: "GET",
     withCredentials: true,
